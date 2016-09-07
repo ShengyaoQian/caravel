@@ -586,8 +586,7 @@ class SliceModelView(CaravelModelView, DeleteMixin):  # noqa
     list_columns = [
         'slice_link', 'viz_type', 'datasource_link', 'creator', 'modified']
     edit_columns = [
-        'slice_name', 'description', 'viz_type', 'druid_datasource',
-        'table', 'owners', 'dashboards', 'params', 'cache_timeout']
+        'slice_name', 'description', 'viz_type', 'owners', 'dashboards', 'params', 'cache_timeout']
     base_order = ('changed_on', 'desc')
     description_columns = {
         'description': Markup(

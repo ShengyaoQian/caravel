@@ -142,7 +142,7 @@ slice_user = Table('slice_user', Model.metadata,
 )
 
 
-class Sources(Model, AuditMixinNullable):
+class Source(Model, AuditMixinNullable):
 
     """datasource model represents diffrent kinds of datasource"""
 
